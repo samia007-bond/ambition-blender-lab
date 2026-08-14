@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile.jpg";
 import { Reveal } from "./Reveal";
 
