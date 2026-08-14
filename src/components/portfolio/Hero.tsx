@@ -1,4 +1,5 @@
-import { ArrowRight, ImageIcon, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
+import profilePhoto from "@/assets/profile.jpg";
 import { Reveal } from "./Reveal";
 
 const KEYWORDS = ["Technology", "Business", "Innovation", "Entrepreneurship"];
@@ -82,19 +83,13 @@ export function Hero() {
               style={{ background: "var(--gradient-brand)" }}
               aria-hidden="true"
             />
-            <div className="relative aspect-[4/5] w-[17rem] overflow-hidden rounded-[2rem] border border-border bg-card sm:w-[21rem]">
-              {/* PROFILE PHOTO PLACEHOLDER — replace with Samia's photo */}
-              <div className="grid h-full w-full place-items-center bg-[image:var(--gradient-surface)] p-6 text-center">
-                <div>
-                  <span className="mx-auto grid h-14 w-14 place-items-center rounded-2xl border border-border bg-secondary">
-                    <ImageIcon className="h-6 w-6 text-primary" />
-                  </span>
-                  <p className="mt-4 font-display text-sm font-semibold">Profile photo placeholder</p>
-                  <p className="mt-1 text-xs text-muted-foreground">
-                    Add Samia's professional picture here
-                  </p>
-                </div>
-              </div>
+            <div className="relative aspect-square w-[17rem] overflow-hidden rounded-full border-4 border-border bg-card shadow-2xl sm:w-[21rem]">
+              <img
+                src={profilePhoto}
+                alt="Samia Parvin Ananna professional portrait"
+                className="h-full w-full object-cover"
+                loading="eager"
+              />
             </div>
             <div className="absolute -bottom-5 -left-5 rounded-2xl border border-border bg-card/90 px-4 py-3 backdrop-blur">
               <p className="font-display text-lg font-bold">3.20</p>
