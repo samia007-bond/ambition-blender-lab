@@ -61,6 +61,13 @@ export function Hero() {
               >
                 Let's Connect
               </a>
+              <a
+                href="/cv.pdf"
+                download
+                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
+              >
+                Download CV <Download className="h-4 w-4" />
+              </a>
             </div>
           </Reveal>
 
