@@ -1,4 +1,4 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile.jpg";
 import { Reveal } from "./Reveal";
 
@@ -60,6 +60,13 @@ export function Hero() {
                 className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
               >
                 Let's Connect
+              </a>
+              <a
+                href="/cv.pdf"
+                download
+                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
+              >
+                Download CV <Download className="h-4 w-4" />
               </a>
             </div>
           </Reveal>
